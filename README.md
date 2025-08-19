@@ -3,22 +3,22 @@
 My goal is to create an OffSec home lab and to document everything I build/destroy during this setup so that others (and future me) can learn from this experience.
 The lab will cover almost any real life scenario, so at the end of this experiment I can be ready for CEH, OSCP, eCPTX and PNPT. (REALLY COOL CERTS AND BIG NAMES)
 In this small lab, I will dive in a lot of topics, from the basic setup all the way to AV evasion, in fact, here are all the stuff I will be doing:
-Setup a Pentesting Demo Lab
-Working with Windows & Linux
-OSINT Techniques
-Social Engineering
-Scripting
-Hacking tools
-Gaining a Foothold
-Windows & Linux Enumeration
-Web Attacks
-Hacking Active Directory
-Privilege Escalation
-Persistence Techniques
-Lateral Movement
-Cloud Exploitation
-Reverse Engineering
-Anti-Virus Evasion
+1. Setup a Pentesting Demo Lab
+2. Working with Windows & Linux
+3. OSINT Techniques
+4. Social Engineering
+5. Scripting
+6. Hacking Tools
+7. Gaining a Foothold
+8. Windows & Linux Enumeration
+9. Web Attacks
+10. Hacking Active Directory
+11. Privilege Escalation
+12. Persistence Techniques
+13. Lateral Movement
+14. Cloud Exploitation
+15. Reverse Engineering
+16. Anti-Virus Evasion
 
 The lab consists of the following:
   - Attack machines: - Kali linux
