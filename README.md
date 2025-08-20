@@ -22,6 +22,8 @@ In this small lab, I will dive in a lot of topics, from the basic setup all the 
 15. Reverse Engineering
 16. Anti-Virus Evasion
 
+## Lab Infrastructure
+
 The lab consists of the following:
   - **Attack machines**:
     - Kali linux
