@@ -1,9 +1,9 @@
 # Offensive_Security_Lab
 
-## Goal
-
 My goal is to create an OffSec home lab and to document everything I build/destroy during this setup so that others (and future me) can learn from this experience.  
 The lab will cover almost any real life scenario, so at the end of this experiment I can be ready for CEH, OSCP, eCPTX and PNPT. (REALLY COOL CERTS AND BIG NAMES).  
+
+## Topics
 In this small lab, I will dive in a lot of topics, from the basic setup all the way to AV evasion, in fact, here are all the stuff I will be doing:
 1. Setup a Pentesting Demo Lab
 2. Working with Windows & Linux
