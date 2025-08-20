@@ -26,10 +26,11 @@ In this small lab, I will dive in a lot of topics, from the basic setup all the 
 
 The lab consists of the following:
   - **Attack machines**:
-    - Kali linux
-    - CommandoVM
+    - Kali linux [CPU: i5-1335U | Memory: 8GB | Disk: 512GB NVME]
+    - CommandoVM [CPU: Ryzen 7 5800x | Memory: 32GB | Disk: 512GB NVME] ***This is overkill, but I ran out of hardware so had to use my gaming PC***
   
   - **Target machines**:
+    - ProxMox OS [CPU: i5-8 | Memory: 16GB | Disk: 512GB SSD] ***All the targets are VMs on this device***
     - Metasploitable VM
     - bWAPP VM
     - Windows 2019 DC server
