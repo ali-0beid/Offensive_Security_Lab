@@ -24,8 +24,8 @@ In this small lab, I will dive in a lot of topics, from the basic setup all the 
 
 The lab consists of the following:
   - **Attack machines**:
-- Kali linux
--  CommandoVM
+    - Kali linux
+    - CommandoVM
   
   - **Target machines**:
     - Metasploitable VM
