@@ -50,3 +50,10 @@ Here is a documentation I made in Visio to demonstrate the infrastructure:
 
 ![OffSecLabDoc](https://github.com/user-attachments/assets/1fc51d2a-e6e6-470e-84d6-c7f5a3cee327)
 
+
+
+# Day 1
+
+## Setting up the environment
+
+I finished installing Kali on my attacker machine, and now Im installing ProxMox on the target machine laptop. *I give you a tip, use ventoy USB, you can thank me later*
