@@ -32,7 +32,7 @@ The lab consists of the following:
   - **Target machines**:
     - ProxMox OS [CPU: i5-8 | Memory: 16GB | Disk: 512GB SSD] ***All the targets are VMs on this device***
     - Metasploitable VM
-    - bWAPP VM
+    - Ubuntu bWAPP VM
     - Windows 2019 DC server
     - Windows IIS + SQL Server
     - 2x Windows VM domain joined DC01
@@ -52,8 +52,17 @@ Here is a documentation I made in Visio to demonstrate the infrastructure:
 
 
 
-# Day 1
+# Phase 1
 
 ## Setting up the environment
 
 I finished installing Kali on my attacker machine, and now Im installing ProxMox on the target machine laptop. *I give you a tip, use ventoy USB, you can thank me later*
+
+IIS server, bWAPP and Metasploitable will be configured to connect to the same vnic as proxmox, this way they can be accessed from my attacker machine and not hiding behind a firewall other than built in firewall, simulating real life public facing web servers.  
+While the internal network, consisting of Win Srv DC, SQL Srv, Win OS clients will be configured and hidden behind pfsense, this way I will have to evade firewall which is really important.  
+
+First, in ProxMox i created a new vnic named vmbr1, this will be the bridge between PfSense and internal network.
+
+Second I set up PfSense, assigned two vnic to it, first the WAN vnic is the same as ProxMox, and the second is the LAN interface which will play the role of DHCP and DNS server for internal networks.
+
+
