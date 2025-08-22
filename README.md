@@ -60,11 +60,14 @@ While the internal network, consisting of Win Srv DC, SQL Srv, Win OS clients wi
 
 First, in ProxMox i created a new vnic named vmbr1, this will be the bridge between PfSense and internal network.
 
-Second I set up PfSense, assigned two vnic to it, first the WAN vnic is the same as ProxMox, and the second is the LAN interface which will play the role of DHCP and DNS server for internal networks.
+Second I set up PfSense, assigned two vnic to it, first the WAN vnic is the same as ProxMox, and the second is the LAN interface which PfSense will use to play the role of DHCP and DNS server for internal networks.
 
 Now to install the VMs on ProxMox.
 
-Everything was smooth until I started installing Metasploitable, which comes in .vmdk (compatible with vbox), so I had to convert it to .qcow2 file (compatible with proxmox)
+Everything was smooth until I started installing Metasploitable, which comes in .vmdk (compatible with vbox), so I had to convert it to .qcow2 file (compatible with proxmox).  
 https://forum.proxmox.com/threads/metasploitable2.126195/
 
+Now to install bWAPP on Ubuntu, I am using Ubuntu server 24.04.3 LTS and I followed this guide:  
+https://github.com/ahmedhamdy0x/bwapp-Installation
+Installing bWAPP was very annoying, error after error after error. database error and apache error and cant login error. But eventually it worked (after many OS reinstallation).
 
