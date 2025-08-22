@@ -47,10 +47,7 @@ The lab consists of the following:
 
       
 Here is a documentation I made in Visio to demonstrate the infrastructure:
-
-![OffSecLabDoc](https://github.com/user-attachments/assets/1fc51d2a-e6e6-470e-84d6-c7f5a3cee327)
-
-
+![OffSecLabDoc](https://github.com/user-attachments/assets/57144360-c491-4e6b-b4e4-a2a9d8c5265a)
 
 # Phase 1
 
