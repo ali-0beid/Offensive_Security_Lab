@@ -27,7 +27,7 @@ In this small lab, I will dive in a lot of topics, from the basic setup all the 
 The lab consists of the following:
   - **Attack machines**:
     - Kali linux [CPU: i5-1335U | Memory: 8GB | Disk: 512GB NVME]
-    - CommandoVM [CPU: Ryzen 7 5800x | Memory: 32GB | Disk: 512GB NVME] ***This is overkill, but I ran out of hardware so had to use my gaming PC***
+    - CommandoVM [CPU: 1 core | Memory: 4GB | Disk: 60GB]
   
   - **Target machines**:
     - ProxMox OS [CPU: i5-8 | Memory: 16GB | Disk: 512GB SSD] ***All the targets are VMs on this device***
@@ -64,5 +64,10 @@ While the internal network, consisting of Win Srv DC, SQL Srv, Win OS clients wi
 First, in ProxMox i created a new vnic named vmbr1, this will be the bridge between PfSense and internal network.
 
 Second I set up PfSense, assigned two vnic to it, first the WAN vnic is the same as ProxMox, and the second is the LAN interface which will play the role of DHCP and DNS server for internal networks.
+
+Now to install the VMs on ProxMox.
+
+Everything was smooth until I started installing Metasploitable, which comes in .vmdk (compatible with vbox), so I had to convert it to .qcow2 file (compatible with proxmox)
+https://forum.proxmox.com/threads/metasploitable2.126195/
 
 
